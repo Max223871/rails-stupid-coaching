@@ -1,0 +1,10 @@
+<%= form_with model: @question do |form| %>
+  <div>
+    <%= form.label :content, "Ask the Coach:" %>
+    <%= form.text_field :content %>
+  </div>
+
+  <div>
+    <%= form.submit "Submit" %>
+  </div>
+<% end %>
